@@ -67,10 +67,9 @@ handling so far is tested with hand-written payloads.
 
 ## Open items with the user
 
-1. **GitHub push failed** with `Repository not found` over SSH. Either the
-   repo `kassimkaher/cacp` was not created yet, or the Mac's SSH key belongs
-   to a different GitHub account than `kassimkaher` (the Mac user is
-   `devalqaasem`). Check with `ssh -T git@github.com`. The local commit exists.
+1. **GitHub**: resolved. The repo is pushed to `git@github.com:kassimkaher/cacp.git`,
+   branch `main`. The user pushes from the Mac. graphify is installed there and
+   registered with Claude Code (`.claude/settings.json`, section in `CLAUDE.md`).
 2. **Phase 0 spikes** need the user's Mac and Claude login:
    `apps/daemon/spikes/README.md`. Spike 1 decides whether observed sessions
    get remote approval or stay monitor-only. Results go in
