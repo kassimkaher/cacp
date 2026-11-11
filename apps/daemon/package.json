@@ -1,0 +1,27 @@
+{
+  "name": "@cacp/daemon",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "cacp-daemon": "./src/cli.ts"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts run",
+    "hooks:install": "tsx src/cli.ts hooks install",
+    "hooks:uninstall": "tsx src/cli.ts hooks uninstall",
+    "spike:held-hook": "tsx spikes/held-hook.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@cacp/protocol": "workspace:*",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
